@@ -507,4 +507,43 @@ form label {
         padding: 1rem;
     }
 }
+.social-login {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.google-btn, .facebook-btn {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.google-btn {
+    background-color: #4285F4;
+}
+
+.facebook-btn {
+    background-color: #3b5998;
+}
+
+.google-btn img, .facebook-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Account Button in Header */
+.navbar ul li a[href="account.html"] {
+    color: #60a5fa;
+    font-weight: 500;
+}
 
