@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrainConnect - Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <h1>TrainConnect</h1>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="booking.html">Book Train</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main >
+        <h2>Book Your Train</h2>
+        <form action="payment.html" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="class">Class:</label>
+            <select id="class" name="class">
+                <option value="sleeper">Sleeper</option>
+                <option value="3rdAC">3rd AC</option>
+                <option value="2ndAC">2nd AC</option>
+                <option value="1stAC">1st AC</option>
+            </select>
+
+            <label for="seat">Seat Selection:</label>
+            <input type="text" id="seat" name="seat" required>
+
+            <button type="submit">Proceed to Payment</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 TrainConnect. All rights reserved.</p>
+    </footer>
+</body>
+</html>

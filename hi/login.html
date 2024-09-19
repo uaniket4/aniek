@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrainConnect - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <h1>TrainConnect</h1>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="booking.html">Book Train</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="account.html">Account</a></li> <!-- New Account Button -->
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main class = "hero-section">
+        <section class="login-form">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                <button type="submit" class="btn">Login</button>
+
+                
+                <p style ="color:black">Don't have an account? <a href="signup.html" class="signup-link">Sign Up</a></p>
+                
+                    <button class="btn google-btn">
+                        <img src="google.png" alt="Google Icon"> Login with Google
+                    </button>
+                    <button class="btn facebook-btn">
+                        <img src="facebook.png" alt="Facebook Icon"> Login with Facebook
+                    </button>
+               
+            </form>
+
+            
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TrainConnect. All rights reserved.</p>
+    </footer>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCHEZEUU9Ig0EMs_GoE_LvjHivbGzMCFfY",
+          authDomain: "trainconnect-81372.firebaseapp.com",
+          projectId: "trainconnect-81372",
+          storageBucket: "trainconnect-81372.appspot.com",
+          messagingSenderId: "123440427105",
+          appId: "1:123440427105:web:5918cbdd11849ac61f7a20",
+          measurementId: "G-GSLX9E9C12"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+
+
+        
+      </script>
+</body>
+</html>
